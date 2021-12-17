@@ -2,6 +2,7 @@ import flower_img from './images/flowers.jpg';
 import shop_img from './images/shop.png';
 import schedule_img from './images/schedule.jpg';
 import topic_img from './images/topic.jpg';
+import food_img from './images/food.jpg';
 
 const Home = () => {
 
@@ -34,8 +35,8 @@ const Home = () => {
                 <div style={Object.assign({marginTop: '20%'},fontStyle2)}>To Be Deployed</div>
                 <ul className="project-ul">
                     <li className="project-li" onClick={() => window.open("https://github.com/qijieguan/Foods_App/")}>
-                        <img className='project-li-img' src={shop_img} alt=""></img>
-                        <div className='project-li-name'>Food App [React Native]</div>
+                        <img className='project-li-img' src={food_img} alt=""></img>
+                        <div className='project-li-name'>Food App [Android]</div>
                     </li>
                 </ul>
             </div>
