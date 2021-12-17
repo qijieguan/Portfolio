@@ -43,16 +43,16 @@
   overflow-y: hidden;
 }
 
-.projects {
+.projects, .not-deploy {
   display: inline-block;
-  min-height: 550px;
+  min-height: 800px;
   width: 450px;
   border-radius: 50px;
   box-shadow: 2px 2px 2px 2px grey;
 }
 
 .project-li {
-  margin-right: 20px;
+  margin: 0 20px 20px 0;
   display: inline-block;
   float: left;
   height: 150px;
@@ -60,6 +60,7 @@
   border: 1px solid rgb(219, 219, 219);
   border-radius: 10px;
   box-shadow: 1px 1px gray;
+  overflow-y: hidden;
 }
 
 .project-li:hover {
