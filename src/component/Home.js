@@ -1,4 +1,5 @@
 import flower_img from './images/flowers.jpg';
+import movie_img from './images/movie.jpg';
 import shop_img from './images/shop.png';
 import schedule_img from './images/schedule.jpg';
 import topic_img from './images/topic.jpg';
@@ -19,6 +20,10 @@ const Home = () => {
             <div className="projects">
                 <div style={fontStyle2}>Projects</div>
                 <ul className="project-ul">
+                    <li className="project-li" onClick={() => window.open("https://protected-meadow-96612.herokuapp.com/")}>
+                        <img className='project-li-img' src={movie_img} alt=""></img>
+                        <div className='project-li-name'>Movie App</div>
+                    </li>
                     <li className="project-li" onClick={() => window.open("https://desolate-thicket-47298.herokuapp.com/")}>
                         <img className='project-li-img' src={shop_img} alt=""></img>
                         <div className='project-li-name'>Shopping App</div>
