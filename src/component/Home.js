@@ -39,7 +39,7 @@ const Home = () => {
                     </li>
                     <li className="project-li" onClick={() => window.open("https://secret-hamlet-60850.herokuapp.com/")}>
                         <img className='project-li-img' src={topic_img} alt=""></img>
-                        <div className='project-li-name'>Q&A App [In Progress] </div>
+                        <div className='project-li-name'>Q&A App</div>
                     </li>
                 </ul>
                 <div style={Object.assign({marginTop: '20%'},fontStyle2)}>To Be Deployed</div>
