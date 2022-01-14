@@ -18,10 +18,19 @@
 }
 
 .home {
+  position: relative;
   display: flex;
   justify-content: space-evenly;
-  min-height: 700px;
-  background-color: rgb(220, 220, 220);
+  min-height: 1000px;
+  background-image: url("https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: black;
+  opacity: 0.4;
 }
 
 .intro {
@@ -32,6 +41,7 @@
   width: 50%;
   border-radius: 50px;
   box-shadow: 2px 2px 2px;
+  z-index: 2;
 }
 
 .profile-image {
@@ -49,6 +59,7 @@
   width: 450px;
   border-radius: 50px;
   box-shadow: 2px 2px 2px;
+  z-index: 2;
 }
 
 .project-li {
@@ -70,4 +81,5 @@
 .project-li-img {
   height: 80%;
   width: 100%;
+  object-fit: cover;
 }

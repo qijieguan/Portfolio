@@ -1,15 +1,16 @@
 import flower_img from './images/flowers.jpg';
 import recipe_img from './images/recipe.jpg';
 import movie_img from './images/movie.jpg';
-import shop_img from './images/shop.png';
+import shop_img from './images/shop.jpeg';
 import schedule_img from './images/schedule.jpg';
-import topic_img from './images/topic.jpg';
+import group_img from './images/group.jpeg';
 import food_img from './images/food.jpg';
 
 const Home = () => {
 
     return(
         <div className="home" id="home">
+            <div className="overlay"/>
             <div className="intro">
                 <div className="profile-image">
                     <img src={flower_img} alt=""/>
@@ -38,7 +39,7 @@ const Home = () => {
                         <div className='project-li-name'>Schedule App</div>
                     </li>
                     <li className="project-li" onClick={() => window.open("https://secret-hamlet-60850.herokuapp.com/")}>
-                        <img className='project-li-img' src={topic_img} alt=""></img>
+                        <img className='project-li-img' src={group_img} alt=""></img>
                         <div className='project-li-name'>Q&A App</div>
                     </li>
                 </ul>
