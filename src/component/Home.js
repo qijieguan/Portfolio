@@ -11,16 +11,14 @@ const Home = () => {
     return(
         <div className="home" id="home">
             <div className="overlay"/>
-            <div className="intro">
-                <div className="profile-image">
-                    <img src={flower_img} alt=""/>
-                </div><br/>
+            <div className="profile">
+                <img src={flower_img} className="profile-image" alt=""/><br/>
                 <span style={fontStyle1}>Qi Jie Guan</span><br/>
                 <div style={{fontSize: '24px', width: '70%', color: 'blueviolet'}}>A front-end developer/UI Designer.  
                 Striving to design impactful websites and applications.</div><br/><br/> 
             </div>
             <div className="projects">
-                <div style={fontStyle2}>Projects</div>
+                <h1 style={fontStyle2}>Projects</h1>
                 <ul className="project-ul">
                     <li className="project-li" onClick={() => window.open("https://cryptic-beyond-98060.herokuapp.com/")}>
                         <img className='project-li-img' src={recipe_img} alt=""></img>
@@ -43,13 +41,11 @@ const Home = () => {
                         <div className='project-li-name'>Q&A App</div>
                     </li>
                 </ul>
-                <div style={Object.assign({marginTop: '20%'},fontStyle2)}>To Be Deployed</div>
-                <ul className="project-ul">
-                    <li className="project-li" onClick={() => window.open("https://github.com/qijieguan/Foods_App/")}>
-                        <img className='project-li-img' src={food_img} alt=""></img>
-                        <div className='project-li-name'>Food App [Android]</div>
-                    </li>
-                </ul>
+                <h1 style={fontStyle2}>To Be Deployed</h1>
+                <div className="project-li" onClick={() => window.open("https://github.com/qijieguan/Foods_App/")}>
+                    <img className='project-li-img' src={food_img} alt=""></img>
+                    <div className='project-li-name'>Food App [Android]</div>
+                </div>
             </div>
         </div>
     );
@@ -62,7 +58,7 @@ const fontStyle1 = {
 }
 
 const fontStyle2 = {
-    margin: '50px 0 0 20px', 
+    margin: '50px 0 20px 20px', 
     width: '80%', 
     fontSize: '20px', 
     fontFamily: 'fantasy',  

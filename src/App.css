@@ -5,24 +5,19 @@
   justify-content: center;
   width: auto;
   height: auto;
-  overflow-x: hidden;
+
   color: black;
   background-color: white;
 }
 
-.App {
-  min-height: 700px;
-  mix-blend-mode: unset;
-  text-align: center;
-  background-color: rgb(220, 220, 220);
-}
+.App {min-height: 700px;}
 
 .home {
   position: relative;
   display: flex;
   justify-content: space-evenly;
   min-height: 1000px;
-  background-image: url("https://images.pexels.com/photos/3408353/pexels-photo-3408353.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/270756/pexels-photo-270756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
 }
 
 .overlay {
@@ -33,14 +28,15 @@
   opacity: 0.4;
 }
 
-.intro {
+.profile {
+  margin-bottom: 100px;
   padding: 25px 0;
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   min-height: 600px;
   width: 50%;
   border-radius: 50px;
-  box-shadow: 2px 2px 2px;
+  box-shadow: 0 0 5px;
   z-index: 2;
 }
 
@@ -48,35 +44,34 @@
   display: flex;
   height: 300px;
   width: 300px;
-  box-shadow: 2px 2px 2px;
+  object-fit: cover;
+  box-shadow: 0 0 5px;
   border-radius: 200px;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .projects, .not-deploy {
-  display: inline-block;
-  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   width: 450px;
   border-radius: 50px;
-  box-shadow: 2px 2px 2px;
+  box-shadow: 0 0 5px;
   z-index: 2;
 }
 
 .project-li {
-  margin: 0 20px 20px 0;
-  display: inline-block;
+  margin: 0 25px 25px 0;
   float: left;
   height: 150px;
   width: 40%;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 10px;
-  box-shadow: 1px 1px 1px;
+  box-shadow: 0 0 5px;
   overflow-y: hidden;
 }
 
-.project-li:hover {
-  opacity: 0.5;
-}
+.project-li:hover {opacity: 0.5;}
 
 .project-li-img {
   height: 80%;
