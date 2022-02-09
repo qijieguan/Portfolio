@@ -17,7 +17,8 @@
   display: flex;
   justify-content: space-evenly;
   min-height: 1000px;
-  background-image: url("https://images.pexels.com/photos/270756/pexels-photo-270756.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("https://images.pexels.com/photos/2896668/pexels-photo-2896668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: auto;
 }
 
 .overlay {
@@ -44,7 +45,7 @@
   display: flex;
   height: 300px;
   width: 300px;
-  object-fit: cover;
+  object-fit: auto;
   box-shadow: 0 0 5px;
   border-radius: 200px;
   overflow: hidden;
@@ -76,5 +77,5 @@
 .project-li-img {
   height: 80%;
   width: 100%;
-  object-fit: cover;
+  object-fit: auto;
 }

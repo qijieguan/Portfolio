@@ -3,9 +3,9 @@ import recipe_img from './images/recipe.jpg';
 import movie_img from './images/movie.jpg';
 import shop_img from './images/shop.jpeg';
 import schedule_img from './images/schedule.jpg';
-import group_img from './images/group.jpeg';
+import group_img from './images/group.jpg';
 import food_img from './images/food.jpg';
-import chat_img from './images/chat.jpeg';
+import chat_img from './images/chat.png';
 
 const Home = () => {
 
