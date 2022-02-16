@@ -25,10 +25,10 @@ const About = () => {
                     </div>
                 </div>
                 <p id='about-me'>
-                    I am a self-taught <span>developer</span> who loves video games. My goal
-                    is to develop web applications at a professional level in the future.
-                    Always looking to learn new <span>trending technologies</span> and explore 
-                    <span> creativities</span> on building websites.
+                    I Am A Self-Taught <span>Developer</span> Who Loves Video Games. My Goal
+                    Is To Develop Web Applications At A Professional Level In The Future.
+                    Always Looking To Learn New <span>Trending Technologies</span> And Explore 
+                    <span> Creativities</span> On Building Websites.
                 </p>
             </div>
         </div>
