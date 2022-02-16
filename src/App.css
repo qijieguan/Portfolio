@@ -148,6 +148,8 @@
   font-style: italic;
 }
 
+#about-me span { font-size: 20px; color: darkred; }
+
 button { box-shadow: 0 0 5px black; border-radius: 5px; border: 0 }
 
 a { text-decoration: none; }
