@@ -32,6 +32,7 @@
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 1px;
   color: white;
+  animation: fadeSlide 1s linear;
 }
 
 #intro-content span { font-size: 28px; font-family: 'Bebas Neue', cursive; color: yellow; }
@@ -129,9 +130,10 @@
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
   color: white;
+  margin-right: auto; 
 }
 
-#about-skills { margin: auto; }
+#about-skills { margin: auto; animation: fadeSlide 0.5s linear; }
 
 #about-skills h1 { font-size: 30px; }
 
@@ -146,6 +148,7 @@
   width: 300px;
   color: peachpuff;
   font-style: italic;
+  animation: fadeSlide 1s linear;
 }
 
 #about-me span { font-size: 20px; color: darkorange; }
@@ -153,3 +156,8 @@
 button { box-shadow: 0 0 5px black; border-radius: 5px; border: 0 }
 
 a { text-decoration: none; }
+
+@keyframes fadeSlide { 
+  0% { opacity: 0; transform: translateY(-10%);}
+  100% { opacity: 1; transform: translateY(0);}
+}
