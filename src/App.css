@@ -32,7 +32,7 @@
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 1px;
   color: white;
-  animation: fadeSlide 1s linear;
+  animation: fadeSlideDown 1s linear;
 }
 
 #intro-content span { font-size: 28px; font-family: 'Bebas Neue', cursive; color: yellow; }
@@ -91,7 +91,7 @@
   display: flex; 
   flex-direction: column;
   min-height: 700px; 
-  background: rgb(205, 218, 255);
+  background: rgb(255, 255, 196);
 }
 
 #back-btn {
@@ -111,8 +111,8 @@
   display: flex;
   height: 500px;
   width: 100%;
-  background: royalblue;
-  box-shadow: 0 0 5px blue;
+  background: yellow;
+  box-shadow: 0 0 5px black;
 }
 
 #about-profile {
@@ -122,42 +122,46 @@
   height: 200px;
   width: 200px;
   border-radius: 100px;
-  box-shadow: 0 0 5px darkblue;
+  box-shadow: 0 0 5px black;
 }
 
 #about-name {
   margin: 0 auto 0 20px;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
-  color: white;
-  margin-right: auto; 
+  color: black;
+  margin-right: auto;
+  animation: fadeSlideLeft 0.5s linear; 
 }
 
-#about-skills { margin: auto; animation: fadeSlide 0.5s linear; }
+#about-skills { margin: auto; color: black; animation: fadeSlideDown 0.5s linear; }
 
-#about-skills h1 { font-size: 30px; }
+#about-skills h1 { font-size: 30px; font-family: 'Bebas Neue', cursive; }
 
-#about-skills { color: white; }
-
-#about-skills li { list-style:square; }
+#about-skills li { list-style: square; font-size: 16px; }
 
 #about-me {
   margin-right: 8%;
   text-align: center;
   font-size: 20px;
   width: 300px;
-  color: peachpuff;
+  color: black;
   font-style: italic;
-  animation: fadeSlide 1s linear;
+  animation: fadeSlideDown 1s linear;
 }
 
-#about-me span { font-size: 20px; color: darkorange; }
+#about-me span { font-size: 20px; color: darkred; }
 
 button { box-shadow: 0 0 5px black; border-radius: 5px; border: 0 }
 
 a { text-decoration: none; }
 
-@keyframes fadeSlide { 
+@keyframes fadeSlideLeft {
+  0% { opacity: 0; transform: translateX(10%);}
+  100% { opacity: 1; transform: translateX(0);}
+}
+
+@keyframes fadeSlideDown { 
   0% { opacity: 0; transform: translateY(-10%);}
   100% { opacity: 1; transform: translateY(0);}
 }
