@@ -26,13 +26,13 @@ const Home = () => {
                         <img className='project-li-img' src={chat_img} alt=""></img>
                         <div className='project-li-name'>Chat App</div>
                     </li>
-                    <li className="project-li" onClick={() => window.open("https://secret-hamlet-60850.herokuapp.com/")}>
-                        <img className='project-li-img' src={group_img} alt=""></img>
-                        <div className='project-li-name'>Q&A App</div>
-                    </li>
                     <li className="project-li" onClick={() => window.open("https://desolate-thicket-47298.herokuapp.com/")}>
                         <img className='project-li-img' src={shop_img} alt=""></img>
                         <div className='project-li-name'>Shopping App</div>
+                    </li>
+                    <li className="project-li" onClick={() => window.open("https://secret-hamlet-60850.herokuapp.com/")}>
+                        <img className='project-li-img' src={group_img} alt=""></img>
+                        <div className='project-li-name'>Q&A App</div>
                     </li>
                     <li className="project-li" onClick={() => window.open("https://enigmatic-spire-34436.herokuapp.com/")}>
                         <img className='project-li-img' src={schedule_img} alt=""></img>
