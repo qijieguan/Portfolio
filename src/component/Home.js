@@ -64,7 +64,7 @@ const Home = () => {
                     <div><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
                 </div>
                 <p>
-                    Please Contact Me For Work Inquiries. 
+                    Please Contact Me Only For Work Inquiries. 
                     Response Time Is Usually Within 24 Hours.
                 </p>
             </div>
