@@ -6,8 +6,12 @@ import group_img from './images/group.jpg';
 import food_img from './images/food.jpg';
 import chat_img from './images/chat.webp';
 import { Link } from 'react-router-dom';
+import { BsLinkedin } from 'react-icons/bs';
+import { MdEmail } from 'react-icons/md'
 
 const Home = () => {
+
+    const url = "https://www.linkedin.com/in/qi-jie-guan-002924201/";
 
     return(
         <div id="home">
@@ -19,9 +23,9 @@ const Home = () => {
                     <Link to='/About'><button>About Me</button></Link>
                 </div>
             </div>
-            <div className="projects">
-                <h1 style={fontStyle}>Projects</h1>
-                <ul className="project-ul">
+            <div id="projects">
+                <ul id="project-ul">
+                    <h1 className='text-label'>Projects</h1>
                     <li className="project-li" onClick={() => window.open("https://still-peak-27529.herokuapp.com/")}>
                         <img className='project-li-img' src={chat_img} alt=""></img>
                         <div className='project-li-name'>Chat App</div>
@@ -46,23 +50,26 @@ const Home = () => {
                         <img className='project-li-img' src={recipe_img} alt=""></img>
                         <div className='project-li-name'>Recipe App</div>
                     </li>
+                    <h1 className='text-label'>To Be Deployed</h1>
+                    <div className="project-li" onClick={() => window.open("https://github.com/qijieguan/Foods_App/")}>
+                        <img className='project-li-img' src={food_img} alt=""></img>
+                        <div className='project-li-name'>Food App [Android]</div>
+                    </div>
                 </ul>
-                <h1 style={fontStyle}>To Be Deployed</h1>
-                <div className="project-li" onClick={() => window.open("https://github.com/qijieguan/Foods_App/")}>
-                    <img className='project-li-img' src={food_img} alt=""></img>
-                    <div className='project-li-name'>Food App [Android]</div>
+            </div>
+            <div id="contact">
+                <h1>Contact</h1>
+                <div id='contact-icons'>
+                    <div id="contact-email"><MdEmail size={35} style={{marginBottom: '10px'}}/></div>
+                    <div><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
                 </div>
+                <p>
+                    Please Contact Me For Work Inquiries. 
+                    Response Time Is Usually Within 24 Hours.
+                </p>
             </div>
         </div>
     );
 };
-
-const fontStyle = {
-    margin: '50px 0 30px 10%', 
-    width: '100%', 
-    fontSize: '32px', 
-    fontFamily: 'fantasy',  
-    textAlign: 'left'
-}
 
 export default Home;
