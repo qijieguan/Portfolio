@@ -44,10 +44,9 @@ const Home = () => {
                         </p>
                         <p className='project-li-solution'>
                             <h1>Solutions</h1>
-                            The solution to the problem of this project involved writing 
-                            optimized data models and queries for MongoDB. The implementation 
-                            of paired data object models and selectors enabled querying  
-                            matching entries in one instance.
+                            The solution to the problem involved writing optimized data models 
+                            and queries for MongoDB. The implementation of paired data object 
+                            models and selectors enabled querying matching entries in one instance.
                         </p>
                         <p className='project-li-technology'>
                             <h1>Technologies</h1>
@@ -77,16 +76,16 @@ const Home = () => {
                         </div>
                         <p className='project-li-difficulty'>
                             <h1>Difficulties</h1>
-                            The biggest task of this project was creating a good UI Design for the website.
+                            The biggest task of this project was creating a UI Design for the website.
                             There was a strong emphasis in HTML and CSS to create visual elements.
                             It also required an understanding in UI design fundamentals and animation techniques.
                         </p>
                         <p className='project-li-solution'>
                             <h1>Solutions</h1>
-                            The best solution to achieve the desired UI for this project was 
+                            The best solution to achieve the desired UI design was 
                             adding scrolling animations to the main page. Through using 
-                            Intersection Observer API, I was able to track elements and apply 
-                            various CSS animations to visual elements scrolling into the screen.
+                            Intersection Observer API, it allowed tracking and application of 
+                            CSS animations to visual elements scrolling into the screen.
                         </p>
                         <p className='project-li-technology'>
                             <h1>Technologies</h1>
