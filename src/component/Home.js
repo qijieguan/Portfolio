@@ -3,7 +3,8 @@ import group_img from './images/group.jpg';
 import chat_img from './images/chat.webp';
 import { Link } from 'react-router-dom';
 import { BsLinkedin } from 'react-icons/bs';
-import { MdEmail } from 'react-icons/md'
+import { MdEmail } from 'react-icons/md';
+import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 
 const Home = () => {
 
@@ -36,14 +37,20 @@ const Home = () => {
                             </div>
                         </div>
                         <p className='project-li-difficulty'>
-                            <h1>Difficulties</h1>
+                            <h1>
+                                <div>Difficulties</div>
+                                <AiOutlineClose id="close-icon" size={25} color="red" style={{marginBottom: '3px'}}/>
+                            </h1>
                             The biggest problem of this project was to reduce the amount of
                             API calls to request data between associated users.
                             In extention, there were too many nested queries to select 
                             and compare ungrouped data to complete API requests.
                         </p>
                         <p className='project-li-solution'>
-                            <h1>Solutions</h1>
+                            <h1>
+                                <div>Solutions</div>
+                                <AiOutlineCheck id="check-icon" size={25} color="green" style={{marginBottom: '3px'}}/>
+                            </h1>
                             The solution to the problem involved writing optimized data models 
                             and queries for MongoDB. The implementation of paired data object 
                             models and selectors enabled querying matching entries in one instance.
@@ -75,13 +82,19 @@ const Home = () => {
                             </div>
                         </div>
                         <p className='project-li-difficulty'>
-                            <h1>Difficulties</h1>
+                            <h1>
+                                <div>Difficulties</div>
+                                <AiOutlineClose id="close-icon" size={25} color="green" style={{marginBottom: '3px'}}/>
+                            </h1>
                             The biggest task of this project was creating a UI Design for users.
                             There was a strong emphasis in HTML and CSS to create visual elements.
                             It also required an understanding in UI design fundamentals and animation techniques.
                         </p>
                         <p className='project-li-solution'>
-                            <h1>Solutions</h1>
+                            <h1>
+                                <div>Solutions</div>
+                                <AiOutlineCheck id="check-icon" size={25} color="red" style={{marginBottom: '3px'}}/>
+                            </h1>
                             The best solution to achieve the desired UI design was 
                             adding scrolling animations to the main page. Through using 
                             Intersection Observer API, it allowed tracking and application of 
@@ -112,14 +125,20 @@ const Home = () => {
                             </div>
                         </div>
                         <p className='project-li-difficulty'>
-                            <h1>Difficulties</h1>
+                            <h1>
+                                <div>Difficulties</div>
+                                <AiOutlineClose id="close-icon" size={25} color="red" style={{marginBottom: '3px'}}/>
+                            </h1>
                             The biggest problem of this project was managing large data 
                             in a relational database. Large data such as image files exceeded
                             the size capacity for most databases. Another limitation of using 
                             relational databases was excluding object entries.
                         </p>
                         <p className='project-li-solution'>
-                            <h1>Solutions</h1>
+                            <h1>
+                                <div>Solutions</div>
+                                <AiOutlineCheck id="check-icon" size={25} color="green" style={{marginBottom: '3px'}}/>
+                            </h1>
                             The solution to database capacity limit was using a cloud API
                             to store image files. Image files sent to the cloud API were converted 
                             into unique urls and hosted on the web. The newly generated urls could 
