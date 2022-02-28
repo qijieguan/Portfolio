@@ -37,9 +37,8 @@ const Home = () => {
                             </div>
                         </div>
                         <p className='project-li-difficulty'>
-                            <h1>
-                                <div>Difficulties</div>
-                                <AiOutlineClose id="close-icon" size={25} color="red" style={{marginBottom: '3px'}}/>
+                            <h1>Difficulties
+                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             The biggest problem of this project was to reduce the amount of
                             API calls to request data between associated users.
@@ -47,9 +46,8 @@ const Home = () => {
                             and compare ungrouped data to complete API requests.
                         </p>
                         <p className='project-li-solution'>
-                            <h1>
-                                <div>Solutions</div>
-                                <AiOutlineCheck id="check-icon" size={25} color="green" style={{marginBottom: '3px'}}/>
+                            <h1>Solutions
+                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             The solution to the problem involved writing optimized data models 
                             and queries for MongoDB. The implementation of paired data object 
@@ -82,18 +80,16 @@ const Home = () => {
                             </div>
                         </div>
                         <p className='project-li-difficulty'>
-                            <h1>
-                                <div>Difficulties</div>
-                                <AiOutlineClose id="close-icon" size={25} color="green" style={{marginBottom: '3px'}}/>
+                            <h1>Difficulties
+                                <AiOutlineClose size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             The biggest task of this project was creating a UI Design for users.
                             There was a strong emphasis in HTML and CSS to create visual elements.
                             It also required an understanding in UI design fundamentals and animation techniques.
                         </p>
                         <p className='project-li-solution'>
-                            <h1>
-                                <div>Solutions</div>
-                                <AiOutlineCheck id="check-icon" size={25} color="red" style={{marginBottom: '3px'}}/>
+                            <h1>Solutions
+                                <AiOutlineCheck size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             The best solution to achieve the desired UI design was 
                             adding scrolling animations to the main page. Through using 
@@ -125,9 +121,8 @@ const Home = () => {
                             </div>
                         </div>
                         <p className='project-li-difficulty'>
-                            <h1>
-                                <div>Difficulties</div>
-                                <AiOutlineClose id="close-icon" size={25} color="red" style={{marginBottom: '3px'}}/>
+                            <h1>Difficulties
+                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             The biggest problem of this project was managing large data 
                             in a relational database. Large data such as image files exceeded
@@ -135,9 +130,8 @@ const Home = () => {
                             relational databases was excluding object entries.
                         </p>
                         <p className='project-li-solution'>
-                            <h1>
-                                <div>Solutions</div>
-                                <AiOutlineCheck id="check-icon" size={25} color="green" style={{marginBottom: '3px'}}/>
+                            <h1>Solutions
+                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             The solution to database capacity limit was using a cloud API
                             to store image files. Image files sent to the cloud API were converted 
