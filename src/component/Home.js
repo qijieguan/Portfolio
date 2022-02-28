@@ -46,7 +46,7 @@ const Home = () => {
                             <h1>Solutions</h1>
                             The solution to the problem of this project involved writing 
                             optimized data models and queries for MongoDB. The implementation 
-                            of paired data object models and selectors enabled querying data with 
+                            of paired data object models and selectors enabled querying  
                             matching entries in one instance.
                         </p>
                         <p className='project-li-technology'>
@@ -77,16 +77,16 @@ const Home = () => {
                         </div>
                         <p className='project-li-difficulty'>
                             <h1>Difficulties</h1>
-                            The biggest task of this project was create a good UI Design for the website.
-                            There is a strong emphasis in HTML and CSS to create visual elements.
+                            The biggest task of this project was creating a good UI Design for the website.
+                            There was a strong emphasis in HTML and CSS to create visual elements.
                             It also required an understanding in UI design fundamentals and animation techniques.
                         </p>
                         <p className='project-li-solution'>
                             <h1>Solutions</h1>
                             The best solution to achieve the desired UI for this project was 
-                            to add scrolling animations to the main page. Through using Intersection 
-                            Observer API, I was able to track elements and apply various CSS animations
-                            to visual elements scrolling into the screen.
+                            adding scrolling animations to the main page. Through using 
+                            Intersection Observer API, I was able to track elements and apply 
+                            various CSS animations to visual elements scrolling into the screen.
                         </p>
                         <p className='project-li-technology'>
                             <h1>Technologies</h1>
@@ -117,14 +117,14 @@ const Home = () => {
                             The biggest problem of this project was managing large data 
                             in a relational database. Large data such as image files exceeded
                             the size capacity for most databases. Another limitation of using 
-                            relational databases was excluding data object entries.
+                            relational databases was excluding object entries.
                         </p>
                         <p className='project-li-solution'>
                             <h1>Solutions</h1>
                             The solution to database capacity limit was using a cloud API
                             to store image files. Image files sent to the cloud API were converted 
                             into unique urls and hosted on the web. The newly generated urls could 
-                            then best stored normally in a database as a string.
+                            then be stored normally in a database as a string.
                         </p>
                         <p className='project-li-technology'>
                             <h1>Technologies</h1>
