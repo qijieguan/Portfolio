@@ -51,37 +51,60 @@
 
 #project-ul {
   margin-left: 5%;
-  display: grid;
-  grid-template-columns: 28% 28% 28%;
+  display: flex;
+  flex-direction: column;
   height: 70%;
   width: 90%;
 }
 
 .text-label {
-  grid-column: 1 / 4;
   margin: 50px 0;
   font-size: 32px; 
   font-family: fantasy;
+  width: 100%;
   text-align: left;
 }
 
 .project-li {
-  margin-bottom: 75px;
-  height: 500px;
+  display: grid;
+  grid-template-columns: 45% 45%;
+  grid-template-rows: 200px 200px 200px;
+  padding-top: 30px;
+  margin-bottom: 200px;
+  height: 600px;
+  width: 100%;
   background: yellow;
   border: 1px solid rgb(219, 219, 219);
   box-shadow: 0 0 5px black;
   overflow: hidden;
 }
 
-.project-li:hover { opacity: 0.5; }
-.project-li-img { height: 70%; width: 100%; object-fit: cover; }
-.project-li-name { display: flex; height: 30%; font-size: 24px; font-family: 'Bebas Neue', cursive; }
+.project-li-img { grid-row: 1 / 3; display: flex; height: 100%; width: 100%; object-fit: cover; }
+.project-li-name { grid-row: 3 / 4; width: 100%; }
+.project-li-name h1 { text-align: center; font-size: 26px; font-family: 'Bebas Neue', cursive; }
+.project-li-btns button { margin-right: 10px; height: 35px; }
+.demo-btn { background: navy;  color: white;}
+.code-btn { border: 2px solid green; color: green; }
+.project-li p h1 { color: black; }
+.project-li p { grid-column: 2 / 3; height: 100%; color: rgb(99, 99, 99);}
+.project-li p h1 { font-size: 20px; }
+
+.project-li p ul li {
+  margin: 0 10px 0 0;
+  padding: 3px;
+  display: inline;
+  text-align: center;
+  max-width: 80px;
+  color: brown;
+  background: rgb(255, 219, 219);
+  border: 2px solid brown;
+  border-radius: 5px;
+}
 
 #contact {
   display: grid;
   grid-template-columns: 20% 55%;
-  margin-top: 300px;
+  margin-top: 200px;
   padding-bottom: 25px;
   height: 250px;
   color: rgb(41, 41, 41);
@@ -157,6 +180,7 @@
 
 button { box-shadow: 0 0 5px black; border-radius: 5px; border: 0 }
 
+button:hover { box-shadow: 0 0 5px 2px black; }
 a { text-decoration: none; }
 
 #overlay { position: absolute; height: 100%; width: 100%; background: black; opacity: 0.6; }
