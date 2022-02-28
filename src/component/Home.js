@@ -76,7 +76,7 @@ const Home = () => {
                         </div>
                         <p className='project-li-difficulty'>
                             <h1>Difficulties</h1>
-                            The biggest task of this project was creating a UI Design for the website.
+                            The biggest task of this project was creating a UI Design for users.
                             There was a strong emphasis in HTML and CSS to create visual elements.
                             It also required an understanding in UI design fundamentals and animation techniques.
                         </p>
