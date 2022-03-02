@@ -162,14 +162,17 @@ const Home = () => {
                 </ul>
             </div>
             <div id="contact">
-                <h1>Contact</h1>
-                <div id='contact-icons'>
-                    <div id="contact-email"><MdEmail size={35} /></div>
-                    <div id='contact-linkedin'><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
-                </div>
+                <h1>
+                    <span>Contact</span>
+                    <div id='contact-icons'>
+                        <div id="contact-email"><MdEmail size={35} /></div>
+                        <div id='contact-linkedin'><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
+                    </div>
+                </h1>
                 <p>
                     Send Me A Message To Connect With Me. 
                     My Response Time Is Usually Within 12-24 Hours.
+                    <h1>Mon-Sun 10AM-5PM PST</h1>
                 </p>
             </div>
         </div>
