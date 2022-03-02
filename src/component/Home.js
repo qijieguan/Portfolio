@@ -68,6 +68,7 @@ const Home = () => {
                             </ul>
                         </p>
                     </li>
+                    <div className='line'/>
                     <li className="project-li">
                         <img className='project-li-img' src={shop_img} alt=""/>
                         <div className='project-li-content'>
@@ -111,6 +112,7 @@ const Home = () => {
                             </ul>
                         </p>
                     </li>
+                    <div className='line'/>
                     <li className="project-li">
                         <img className='project-li-img' src={group_img} alt=""/>
                         <div className='project-li-content'>
@@ -166,7 +168,7 @@ const Home = () => {
                     <div id='contact-linkedin'><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
                 </div>
                 <p>
-                    Send Me A Message To Connect With Me For Work Inquiries. 
+                    Send Me A Message To Connect With Me. 
                     My Response Time Is Usually Within 12-24 Hours.
                 </p>
             </div>
