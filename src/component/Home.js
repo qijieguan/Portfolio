@@ -52,7 +52,7 @@ const Home = () => {
                                 >View Demo</button>
                                 <button className='code-btn'
                                     onClick={()=>window.open('https://github.com/qijieguan/ChatApp')}
-                                >View Code</button>
+                                >View Code<div className="btn-overlay"/></button>
                             </div>
                         </div>
                         <p className='project-li-technology'>
@@ -98,7 +98,7 @@ const Home = () => {
                                 >View Demo</button>
                                 <button className='code-btn'
                                     onClick={()=>window.open('https://github.com/qijieguan/ShoppingApp')}
-                                >View Code</button>
+                                >View Code<div className="btn-overlay"/></button>
                             </div>
                         </div>
                         <p className='project-li-technology'>
@@ -143,7 +143,7 @@ const Home = () => {
                                 >View Demo</button>
                                 <button className='code-btn'
                                     onClick={()=>window.open('https://github.com/qijieguan/ChatroomApp')}
-                                >View Code</button>
+                                >View Code<div className="btn-overlay"/></button>
                             </div>
                         </div>
                         <p className='project-li-technology'>
@@ -172,7 +172,7 @@ const Home = () => {
                 <p>
                     Send Me A Message To Connect With Me. 
                     My Response Time Is Usually Within 12-24 Hours.
-                    <h1>Mon-Sun 10AM-5PM PST</h1>
+                    <h1>Mon-Fri, 11AM-5PM PST</h1>
                 </p>
             </div>
         </div>
