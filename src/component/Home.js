@@ -1,4 +1,4 @@
-import shop_img from './images/shop.jpeg';
+import shop_img from './images/shop.jpg';
 import group_img from './images/group.jpg';
 import chat_img from './images/chat.webp';
 import { Link } from 'react-router-dom';
