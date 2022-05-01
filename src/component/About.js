@@ -2,12 +2,12 @@ import { Link } from "react-router-dom";
 
 const About = () => {
     return (
-        <div id='about'>
-            <Link to='/'><button id="back-btn">Go Back</button></Link>
-            <div id='about-content'>
-                <div id='about-profile'/>
-                <div id='about-name'>Qi Jie Guan</div>
-                <div id='about-skills'>
+        <div className='about flex'>
+            <Link to='/'><button className="back-btn">Go Back</button></Link>
+            <div className='about-content flex'>
+                <div className='about-profile'/>
+                <div className='about-name'>Qi Jie Guan</div>
+                <div className='about-skills'>
                     <h1>Tech Stack</h1>
                     <div style={{display: 'flex'}}>
                         <ul>
@@ -24,7 +24,7 @@ const About = () => {
                         </ul>
                     </div>
                 </div>
-                <p id='about-me'>
+                <p className='about-me'>
                     I Am A Self-Taught <span>Developer</span> Who Loves Video Games. My Goal
                     Is To Develop Web Applications At A Professional Level In The Future.
                     Always Looking To Learn New <span>Trending Technologies</span> And Explore 

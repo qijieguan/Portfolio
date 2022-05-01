@@ -11,19 +11,19 @@ const Home = () => {
     const url = "https://www.linkedin.com/in/qi-jie-guan-002924201/";
 
     return(
-        <div id="home">
-            <div id="intro">
-                <div id="overlay"/>
-                <div id='intro-content'>
+        <div className="home">
+            <div className="intro">
+                <div className="overlay"/>
+                <div className='intro-content'>
                     <h1>A Self-Taught Frontend Developer</h1>
                     <span>QI JIE <span style={{color: 'white'}}>GUAN</span></span>
                     <Link to='/About'><button>About Me</button></Link>
                 </div>
             </div>
-            <div id="projects">
-                <ul id="project-ul">
+            <div className="projects">
+                <ul className="project-ul">
                     <h1 className='text-label'>Projects</h1>
-                    <li className="project-li">
+                    <li className="project-li grid">
                         <img className='project-li-img' src={chat_img} alt=""/>
                         <div className='project-li-content'>
                             <p className='project-li-difficulty'>
@@ -45,7 +45,7 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='project-li-name'>
-                            <h1>Chat App</h1>
+                            <h1>Message App</h1>
                             <div className='project-li-btns'>
                                 <button className='demo-btn' 
                                     onClick={()=>window.open("https://still-peak-27529.herokuapp.com/")}
@@ -69,7 +69,7 @@ const Home = () => {
                         </p>
                     </li>
                     <div className='line'/>
-                    <li className="project-li">
+                    <li className="project-li grid">
                         <img className='project-li-img' src={shop_img} alt=""/>
                         <div className='project-li-content'>
                             <p className='project-li-difficulty'>
@@ -91,7 +91,7 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='project-li-name'>
-                            <h1>Shopping App</h1>
+                            <h1>E-Commerce App</h1>
                             <div className='project-li-btns'>
                                 <button className='demo-btn' 
                                     onClick={()=>window.open("https://desolate-thicket-47298.herokuapp.com/")}
@@ -113,7 +113,7 @@ const Home = () => {
                         </p>
                     </li>
                     <div className='line'/>
-                    <li className="project-li">
+                    <li className="project-li grid">
                         <img className='project-li-img' src={group_img} alt=""/>
                         <div className='project-li-content'>
                             <p className='project-li-difficulty'>
@@ -161,18 +161,18 @@ const Home = () => {
                     </li>
                 </ul>
             </div>
-            <div id="contact">
+            <div className="contact grid">
                 <h1>
-                    <span>Contact</span>
-                    <div id='contact-icons'>
-                        <div id="contact-email"><MdEmail size={35} /></div>
-                        <div id='contact-linkedin'><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
+                    <div className='contact-icons'>
+                        <span>Contact</span>
+                        <div className="contact-email"><MdEmail size={35}/></div>
+                        <div className='contact-linkedin'><BsLinkedin size={30} onClick={() => {window.open(url)}}/></div>
                     </div>
                 </h1>
                 <p>
-                    Send Me A Message To Connect With Me. 
-                    My Response Time Is Usually Within 12-24 Hours.
-                    <h1>Mon-Fri, 11AM-5PM PST</h1>
+                    Send Me a Message to Connect with Me. 
+                    My Response Time is Usually within 12-24 Hours.
+                    <h1>Mon-Fri, 10AM-5PM PST</h1>
                 </p>
             </div>
         </div>
