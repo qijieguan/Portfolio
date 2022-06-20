@@ -1,5 +1,5 @@
 import shop_img from './images/shop.jpg';
-import group_img from './images/group.jpg';
+import grocery_img from './images/grocery.jpeg';
 import chat_img from './images/chat.webp';
 import { Link } from 'react-router-dom';
 import { BsLinkedin } from 'react-icons/bs';
@@ -70,6 +70,52 @@ const Home = () => {
                     </li>
                     <div className='line'/>
                     <li className="project-li grid">
+                        <img className='project-li-img' src={grocery_img} alt=""/>
+                        <div className='project-li-content'>
+                            <p className='project-li-difficulty'>
+                                <h1>Difficulties
+                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The biggest challenge of this project was integrating a Data Grid tool to 
+                                table data. By default, data were stored in cells limited to raw HTML code. While data 
+                                stored in cells were editable, it lacked the usage of methods to update the data outside
+                                of the table.
+                            </p>
+                            <p className='project-li-solution'>
+                                <h1>Solutions
+                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The solution to the challenge was to build a custom component supported by the Data Grid 
+                                tool. It enabled binding methods to cells containing target data. Thus, those methods
+                                handled updates to data globally while they were edited manually from the table. Additionally, 
+                                the custom component allowed full style customiztion and HTML markup for cells.
+                            </p>
+                        </div>
+                        <div className='project-li-name'>
+                            <h1>E-Grocer App</h1>
+                            <div className='project-li-btns'>
+                                <button className='demo-btn' 
+                                    onClick={()=>window.open("https://e-grocer-app.herokuapp.com/")}
+                                >View Demo</button>
+                                <button className='code-btn'
+                                    onClick={()=>window.open('https://github.com/qijieguan/E_Grocer_App')}
+                                >View Code<div className="btn-overlay"/></button>
+                            </div>
+                        </div>
+                        <p className='project-li-technology'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>Angular</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>Typescript</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <div className='line'/>
+                    <li className="project-li grid">
                         <img className='project-li-img' src={shop_img} alt=""/>
                         <div className='project-li-content'>
                             <p className='project-li-difficulty'>
@@ -108,53 +154,6 @@ const Home = () => {
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>Javascript</li>
-                                <li>Node</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <div className='line'/>
-                    <li className="project-li grid">
-                        <img className='project-li-img' src={group_img} alt=""/>
-                        <div className='project-li-content'>
-                            <p className='project-li-difficulty'>
-                                <h1>Difficulties
-                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
-                                </h1>
-                                The biggest problem of this project was managing large data 
-                                in a relational database. Large data such as image files exceeded
-                                the size capacity for most databases. Another limitation of using 
-                                relational databases was excluding object entries.
-                            </p>
-                            <p className='project-li-solution'>
-                                <h1>Solutions
-                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
-                                </h1>
-                                The solution to database capacity limit was using a cloud API
-                                to store image files. Image files sent to the cloud API were converted 
-                                into unique urls and hosted on the web. The newly generated urls could 
-                                then be stored normally in a database as a string.
-                            </p>
-                        </div>
-                        <div className='project-li-name'>
-                            <h1>Q&A App</h1>
-                            <div className='project-li-btns'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://secret-hamlet-60850.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/ChatroomApp')}
-                                >View Code<div className="btn-overlay"/></button>
-                            </div>
-                        </div>
-                        <p className='project-li-technology'>
-                            <h1>Technologies</h1>
-                            <ul>
-                                <li>React</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Express</li>
-                                <li>MySQL</li>
                                 <li>Node</li>
                             </ul>
                         </p>
