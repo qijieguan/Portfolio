@@ -48,10 +48,10 @@ const Home = () => {
                             <h1>Message App</h1>
                             <div className='project-li-btns'>
                                 <button className='demo-btn' 
-                                    onClick={()=>window.open("https://still-peak-27529.herokuapp.com/")}
+                                    onClick={()=>window.open("https://message-app-prod.herokuapp.com/")}
                                 >View Demo</button>
                                 <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/ChatApp')}
+                                    onClick={()=>window.open('https://github.com/qijieguan/Message_App')}
                                 >View Code<div className="btn-overlay"/></button>
                             </div>
                         </div>
@@ -140,10 +140,10 @@ const Home = () => {
                             <h1>E-Commerce App</h1>
                             <div className='project-li-btns'>
                                 <button className='demo-btn' 
-                                    onClick={()=>window.open("https://desolate-thicket-47298.herokuapp.com/")}
+                                    onClick={()=>window.open("https://e-commerce-app-prod.herokuapp.com/")}
                                 >View Demo</button>
                                 <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/ShoppingApp')}
+                                    onClick={()=>window.open('https://github.com/qijieguan/ECommerce_App')}
                                 >View Code<div className="btn-overlay"/></button>
                             </div>
                         </div>
