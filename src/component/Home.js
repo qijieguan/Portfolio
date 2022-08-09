@@ -1,5 +1,5 @@
 import shop_img from './images/shop.jpg';
-import grocery_img from './images/grocery.jpeg';
+import grocery_img from './images/grocery.jpg';
 import chat_img from './images/chat.webp';
 import { Link } from 'react-router-dom';
 import { BsLinkedin } from 'react-icons/bs';
