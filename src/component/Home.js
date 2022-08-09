@@ -24,6 +24,52 @@ const Home = () => {
                 <ul className="project-ul">
                     <h1 className='text-label'>Projects</h1>
                     <li className="project-li grid">
+                        <img className='project-li-img' src={grocery_img} alt=""/>
+                        <div className='project-li-content'>
+                            <p className='project-li-difficulty'>
+                                <h1>Difficulties
+                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The biggest challenge of this project was integrating a Data Grid tool to 
+                                table data. By default, data were stored in cells limited to raw HTML code. While data 
+                                stored in cells were editable, it lacked the usage of methods to update the data outside
+                                of the table.
+                            </p>
+                            <p className='project-li-solution'>
+                                <h1>Solutions
+                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The solution to the challenge was to build a custom component supported by the Data Grid 
+                                tool. It enabled binding methods to cells containing target data. Thus, those methods
+                                handled updates to data globally while they were edited manually from the table. Additionally, 
+                                the custom component allowed style customiztion and HTML markup for cells.
+                            </p>
+                        </div>
+                        <div className='project-li-name'>
+                            <h1>E-Grocer App</h1>
+                            <div className='project-li-btns'>
+                                <button className='demo-btn' 
+                                    onClick={()=>window.open("https://e-grocer-app.herokuapp.com/")}
+                                >View Demo</button>
+                                <button className='code-btn'
+                                    onClick={()=>window.open('https://github.com/qijieguan/E_Grocer_App')}
+                                >View Code<div className="btn-overlay"/></button>
+                            </div>
+                        </div>
+                        <p className='project-li-technology'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>Angular</li>
+                                <li>HTML</li>
+                                <li>SCSS</li>
+                                <li>Typescript</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <div className='line'/>
+                    <li className="project-li grid">
                         <img className='project-li-img' src={chat_img} alt=""/>
                         <div className='project-li-content'>
                             <p className='project-li-difficulty'>
@@ -64,52 +110,6 @@ const Home = () => {
                                 <li>Javascript</li>
                                 <li>Express</li>
                                 <li>MongoDB</li>
-                                <li>Node</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <div className='line'/>
-                    <li className="project-li grid">
-                        <img className='project-li-img' src={grocery_img} alt=""/>
-                        <div className='project-li-content'>
-                            <p className='project-li-difficulty'>
-                                <h1>Difficulties
-                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
-                                </h1>
-                                The biggest challenge of this project was integrating a Data Grid tool to 
-                                table data. By default, data were stored in cells limited to raw HTML code. While data 
-                                stored in cells were editable, it lacked the usage of methods to update the data outside
-                                of the table.
-                            </p>
-                            <p className='project-li-solution'>
-                                <h1>Solutions
-                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
-                                </h1>
-                                The solution to the challenge was to build a custom component supported by the Data Grid 
-                                tool. It enabled binding methods to cells containing target data. Thus, those methods
-                                handled updates to data globally while they were edited manually from the table. Additionally, 
-                                the custom component allowed full style customiztion and HTML markup for cells.
-                            </p>
-                        </div>
-                        <div className='project-li-name'>
-                            <h1>E-Grocer App</h1>
-                            <div className='project-li-btns'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://e-grocer-app.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/E_Grocer_App')}
-                                >View Code<div className="btn-overlay"/></button>
-                            </div>
-                        </div>
-                        <p className='project-li-technology'>
-                            <h1>Technologies</h1>
-                            <ul>
-                                <li>Angular</li>
-                                <li>HTML</li>
-                                <li>SCSS</li>
-                                <li>Typescript</li>
-                                <li>Express</li>
                                 <li>Node</li>
                             </ul>
                         </p>
