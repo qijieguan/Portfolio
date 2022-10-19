@@ -1,5 +1,5 @@
-import shop_img from './images/shop.jpg';
-import grocery_img from './images/grocery.jpg';
+import furniture_img from './images/furniture.jpg';
+import grocery_img from './images/grocery.jpeg';
 import chat_img from './images/chat.webp';
 import { Link } from 'react-router-dom';
 import { BsLinkedin } from 'react-icons/bs';
@@ -116,7 +116,7 @@ const Home = () => {
                     </li>
                     <div className='line'/>
                     <li className="project-li grid">
-                        <img className='project-li-img' src={shop_img} alt=""/>
+                        <img className='project-li-img' src={furniture_img} alt=""/>
                         <div className='project-li-content'>
                             <p className='project-li-difficulty'>
                                 <h1>Difficulties
