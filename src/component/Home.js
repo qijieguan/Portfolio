@@ -1,6 +1,7 @@
 import furniture_img from './images/furniture.jpg';
 import grocery_img from './images/grocery.jpeg';
 import chat_img from './images/chat.webp';
+import wings_img from './images/wings.jpeg';
 import { Link } from 'react-router-dom';
 import { BsLinkedin } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
@@ -24,17 +25,67 @@ const Home = () => {
                 <ul className="project-ul">
                     <li className="project-li grid">
                         <h1 className='project-label'>Projects</h1>
+                        <img className='project-img' src={wings_img} alt=""/>
+                        <div className='project-content'>
+                            <p className='project-difficulty paragraph'>
+                                <h1>Difficulties
+                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The project contained two complex tasks that required more advanced solutions.
+                                <br/><br/>
+                                The first challenge was implementing a slideshow that allowed looping.
+                                <br/><br/>
+                                The second challenge was building a map that located nearby food places.
+                            </p>
+                            <p className='project-solution paragraph'>
+                                <h1>Solutions
+                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The approach to build a simple slideshow was identify older solutions. 
+                                The solution was to develop loop logic for both scrolling   
+                                and slide objects.
+                                <br/><br/>
+                                The approach on building a map to locate nearby locations was using 
+                                Google Map service. The final solution integrated various Google Map APIs
+                                to fulfill the map functions.
+                            </p>
+                        </div>
+                        <div className='project-name'>
+                            <h1>Food App (development)</h1>
+                            <div className='project-btns flex'>
+                                <button className='demo-btn' 
+                                    onClick={()=>window.open("https://food-app-prod.herokuapp.com/")}
+                                >View Demo<div className="btn-overlay"/></button>
+                                <button className='code-btn'
+                                    onClick={()=>window.open('https://github.com/qijieguan/Food_App')}
+                                >View Code<div className="btn-overlay"/></button>
+                            </div>
+                        </div>
+                        <p className='project-tech'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Node</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <div className='line'/>
+
+                    <li className="project-li grid">
                         <img className='project-img' src={chat_img} alt=""/>
                         <div className='project-content'>
                             <p className='project-difficulty paragraph'>
                                 <h1>Difficulties
                                     <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
                                 </h1>
-                                The biggest complexity of this project was backend development to organize and store
-                                different media content. The task required data manipulation and effective use of API 
-                                services.
+                                The major challenge was developing a backend to store
+                                media content. Most media content required different storages 
+                                and data manipulation to be usable.
                                 <br/><br/>
-                                The other task of this project was implementing a frontend design and 
+                                The other challenge was implementing a frontend design and 
                                 content presentation. The task required some web design skills to
                                 develop a web theme and UI layouts.
                             </p>
@@ -42,12 +93,12 @@ const Home = () => {
                                 <h1>Solutions
                                     <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                                 </h1>
-                                The solution was using a database and cloud service synchronously
-                                to process media data. The process required Javascript and file management to 
-                                convert media data to be usable for the database and cloud storage.
+                                The approach to store different media data was through a database and cloud API. 
+                                The solution used Javascript and file management to 
+                                convert media data until it was valid for storage.
                                 <br/><br/>
-                                The solution was to learn visual concepts and gain an understanding of 
-                                social media layouts and formats. The designs and concepts were executed
+                                The approach to build a frontend design was from exploring visual concepts and  
+                                social media layouts. The designs and concepts were executed
                                 using HTML, CSS, and Javascript skills.
                             </p>
                         </div>
@@ -84,23 +135,23 @@ const Home = () => {
                                 <h1>Difficulties
                                     <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
                                 </h1>
-                                The frontend task of this project was handling data management using the Ag-Grid 
+                                The frontend challenge was handling data management using the Ag-Grid 
                                 tool. The tabled data required additional functions to update cart data globally to the 
                                 user.
                                 <br/><br/>
-                                The backend task of the project required in-depth 
+                                The backend challenge required an in-depth 
                                 knowledge of database language to select target user and update their cart.
                             </p>
                             <p className='project-solution paragraph'>
                                 <h1>Solutions
                                     <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                                 </h1>
-                                The frontend task was resolved by building a custom component 
-                                to bind functions to displaying cart data. Making changes to cart 
-                                item would trigger javascript logic to handle cart data on both 
+                                The frontend solution was to build a custom component 
+                                with functions to display cart data. Making changes to cart 
+                                item would trigger Javascript code to handle cart data on both 
                                 frontend and backend. 
                                 <br/><br/>
-                                The approach for the backend task was research and test possible database queries. 
+                                The approach for the backend challenge was research and test possible database queries. 
                                 The solution required sequencing data object properties to find matching
                                 user and cart information.
                             </p>
@@ -137,18 +188,17 @@ const Home = () => {
                                 <h1>Difficulties
                                     <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
                                 </h1>
-                                The biggest task of this project was creating a UI design for users.
-                                There was a strong emphasis in HTML and CSS to create visual elements.
-                                It also required an understanding in UI design fundamentals and animation techniques.
+                                The major complexity of this project was creating an interactive design for users.
+                                The project design focuses on creating visual elements such as 
+                                interactive animations.
                             </p>
                             <p className='project-solution paragraph'>
                                 <h1>Solutions
                                     <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                                 </h1>
-                                The best solution to achieve the desired UI design was 
-                                adding scrolling animations to the main page. Through using 
-                                an observer API, it allowed tracking and application of 
-                                CSS animations to visual elements scrolling into the screen.
+                                The solution to fulfill the UI design was adding scrolling animations 
+                                to visual content presentation. Through using a tracking API,
+                                CSS animations were applied to visual elements scrolling into the screen.
                             </p>
                         </div>
                         <div className='project-name'>
