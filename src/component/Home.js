@@ -51,7 +51,7 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='project-name'>
-                            <h1>Food App (development)</h1>
+                            <h1>Food App</h1>
                             <div className='project-btns flex'>
                                 <button className='demo-btn' 
                                     onClick={()=>window.open("https://food-app-prod.herokuapp.com/")}
