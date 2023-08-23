@@ -1,3 +1,4 @@
+import flight_img from './images/flight.webp';
 import furniture_img from './images/furniture.jpg';
 import grocery_img from './images/grocery.jpeg';
 import chat_img from './images/chat.webp';
@@ -25,56 +26,6 @@ const Home = () => {
                 <ul className="project-ul">
                     <li className="project-li grid">
                         <h1 className='project-label'>Projects</h1>
-                        <img className='project-img' src={wings_img} alt=""/>
-                        <div className='project-content'>
-                            <p className='project-difficulty paragraph'>
-                                <h1>Difficulties
-                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
-                                </h1>
-                                The project contained two complex tasks that required more advanced solutions.
-                                <br/><br/>
-                                The first challenge was implementing a slideshow that allowed looping.
-                                <br/><br/>
-                                The second challenge was building a map that located nearby food places.
-                            </p>
-                            <p className='project-solution paragraph'>
-                                <h1>Solutions
-                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
-                                </h1>
-                                The approach to build a simple slideshow was identify older solutions. 
-                                The solution was to develop loop logic for both scrolling   
-                                and slide objects.
-                                <br/><br/>
-                                The approach on building a map to locate nearby locations was using 
-                                Google Map service. The final solution integrated various Google Map APIs
-                                to fulfill the map functions.
-                            </p>
-                        </div>
-                        <div className='project-name'>
-                            <h1>Food App</h1>
-                            <div className='project-btns flex'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://food-app-prod.herokuapp.com/")}
-                                >View Demo<div className="btn-overlay"/></button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/Food_App')}
-                                >View Code<div className="btn-overlay"/></button>
-                            </div>
-                        </div>
-                        <p className='project-tech'>
-                            <h1>Technologies</h1>
-                            <ul>
-                                <li>React</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Node</li>
-                            </ul>
-                        </p>
-                    </li>
-                    <div className='line'/>
-
-                    <li className="project-li grid">
                         <img className='project-img' src={chat_img} alt=""/>
                         <div className='project-content'>
                             <p className='project-difficulty paragraph'>
@@ -121,8 +72,111 @@ const Home = () => {
                                 <li>CSS</li>
                                 <li>Javascript</li>
                                 <li>Express</li>
-                                <li>MongoDB</li>
                                 <li>Node</li>
+                                <li>MongoDB</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <div className='line'/>
+
+                    <li className="project-li grid">
+                        <img className='project-img' src={flight_img} alt=""/>
+                        <div className='project-content'>
+                            <p className='project-difficulty paragraph'>
+                                <h1>Difficulties
+                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The early stage of this project was to recreate flight searching functions. It involved
+                                aggregation of real flight airlines and prices.
+                                <br/><br/>
+                                The project challenge was there were many flight API services that were free to use. 
+                                <br/><br/>
+                                There was a limitation working with Free plans of the API services.
+                                It was difficult to query adequate and real flight data to build this app.
+                            </p>
+                            <p className='project-solution paragraph'>
+                                <h1>Solutions
+                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The approach was to go through continuous testing and analysis of multiple API services.
+                                <br/><br/>
+                                It required analysing over 300 API requests to narrow down to a free flight API service 
+                                that provided reliable flight data.  
+                            </p>
+                        </div>
+                        <div className='project-name'>
+                            <h1>Flight App</h1>
+                            <div className='project-btns flex'>
+                                <button className='demo-btn' 
+                                    onClick={()=>window.open("https://flight-app-prod-2c69f983e3fc.herokuapp.com/")}
+                                >View Demo<div className="btn-overlay"/></button>
+                                <button className='code-btn'
+                                    onClick={()=>window.open('https://github.com/qijieguan/Flight_App')}
+                                >View Code<div className="btn-overlay"/></button>
+                            </div>
+                        </div>
+                        <p className='project-tech'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Flight Api</li>
+                            </ul>
+                        </p>
+                    </li>
+                    <div className='line'/>
+
+                    <li className="project-li grid">
+                        <img className='project-img' src={wings_img} alt=""/>
+                        <div className='project-content'>
+                            <p className='project-difficulty paragraph'>
+                                <h1>Difficulties
+                                    <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The project contained two complex tasks that required more advanced solutions.
+                                <br/><br/>
+                                The first challenge was implementing a slideshow that allowed looping.
+                                <br/><br/>
+                                The second challenge was building a map that located nearby food places.
+                            </p>
+                            <p className='project-solution paragraph'>
+                                <h1>Solutions
+                                    <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                                </h1>
+                                The approach to build a simple slideshow was identify older solutions. 
+                                The solution was to develop loop logic for both scrolling   
+                                and slide objects.
+                                <br/><br/>
+                                The approach on building a map to locate nearby locations was using 
+                                Google Map service. The final solution integrated various Google Map APIs
+                                to fulfill the map functions.
+                            </p>
+                        </div>
+                        <div className='project-name'>
+                            <h1>Food App</h1>
+                            <div className='project-btns flex'>
+                                <button className='demo-btn' 
+                                    onClick={()=>window.open("https://food-app-prod.herokuapp.com/")}
+                                >View Demo<div className="btn-overlay"/></button>
+                                <button className='code-btn'
+                                    onClick={()=>window.open('https://github.com/qijieguan/Food_App')}
+                                >View Code<div className="btn-overlay"/></button>
+                            </div>
+                        </div>
+                        <p className='project-tech'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Google Map Api</li>
                             </ul>
                         </p>
                     </li>
@@ -219,6 +273,7 @@ const Home = () => {
                                 <li>HTML</li>
                                 <li>CSS</li>
                                 <li>Javascript</li>
+                                <li>Express</li>
                                 <li>Node</li>
                             </ul>
                         </p>
