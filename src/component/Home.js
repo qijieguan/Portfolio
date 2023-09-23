@@ -1,4 +1,4 @@
-import flight_img from './images/flight.webp';
+import travel_img from './images/travel.jpeg';
 import furniture_img from './images/furniture.jpg';
 import grocery_img from './images/grocery.jpeg';
 import chat_img from './images/chat.webp';
@@ -80,7 +80,7 @@ const Home = () => {
                     <div className='line'/>
 
                     <li className="project-li grid">
-                        <img className='project-img' src={flight_img} alt=""/>
+                        <img className='project-img' src={travel_img} alt=""/>
                         <div className='project-content'>
                             <p className='project-difficulty paragraph'>
                                 <h1>Difficulties
@@ -105,13 +105,13 @@ const Home = () => {
                             </p>
                         </div>
                         <div className='project-name'>
-                            <h1>Flight App</h1>
+                            <h1>Travel App</h1>
                             <div className='project-btns flex'>
                                 <button className='demo-btn' 
-                                    onClick={()=>window.open("https://flight-app-prod-2c69f983e3fc.herokuapp.com/")}
+                                    onClick={()=>window.open("https://travel-app-prod-5e426aff57d6.herokuapp.com/")}
                                 >View Demo<div className="btn-overlay"/></button>
                                 <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/Flight_App')}
+                                    onClick={()=>window.open('https://github.com/qijieguan/Travel_App')}
                                 >View Code<div className="btn-overlay"/></button>
                             </div>
                         </div>
