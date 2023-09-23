@@ -42,9 +42,17 @@
 .intro-content button:hover { color: rgb(75, 75, 75); background: orange; }
 
 .project-ul { flex-direction: column; height: 70%; width: 100%; margin: 0; padding: 0 2vw; }
-.project-li { grid-template-columns: 45% 45%; gap: 2vh; }
+.project-li { grid-template-columns: 50% 45%; gap: 2vh; justify-content: space-between; }
 .project-label { grid-column: 1 / 3; margin: 7.5vh 0 5vh 0; font-size: clamp(2rem, 3.5vw, 3rem); font-family: fantasy; width: 100%; text-align: left; }
-.project-img { margin: 0.125rem; height: 30rem; width: 100%; object-fit: cover; object-position: center; box-shadow: 0 0 5px gray;}
+.project-img { 
+  margin: 0.25vh auto; 
+  height: 30rem; 
+  width: 100%; 
+  object-fit: cover; 
+  object-position: center; 
+  border-radius: 0.25rem;
+}
+
 .project-name > h1 { 
   min-height: 3.5rem; 
   text-align: center; 
@@ -98,7 +106,7 @@
   border-radius: 5px;
 }
 
-.line { margin: 12vh 0; height: 2px; width: 100%; background: rgb(211, 211, 211); }
+.line { margin: 12vh 0; height: 2px; width: 100%; background: rgb(228, 228, 228); }
 
 .contact {
   grid-template-columns: 20% 55%;
@@ -181,8 +189,10 @@ ul, li { padding: 0; margin: 0; }
 .overlay { position: absolute; height: 100%; width: 100%; background: black; opacity: 0.6; }
 
 @media (max-width: 50rem) {
+  .project-ul { padding: 0 1vw; }
   .project-li { grid-template-columns: 100%; }
   .project-label { grid-column: 1 / 2; }
+  .project-img { height: 20rem; }
   .about { height: 63rem; }
   .about-content { height: 53rem; flex-direction: column; }
   .about-profile { margin: 1.25rem auto auto auto; }

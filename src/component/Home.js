@@ -89,10 +89,8 @@ const Home = () => {
                                 The early stage of this project was to recreate flight searching functions. It involved
                                 aggregation of real flight airlines and prices.
                                 <br/><br/>
-                                The project challenge was there were many flight API services that were free to use. 
-                                <br/><br/>
                                 There was a limitation working with Free plans of the API services.
-                                It was difficult to query adequate and real flight data to build this app.
+                                It was difficult to find suitable flight data to build this app.
                             </p>
                             <p className='project-solution paragraph'>
                                 <h1>Solutions
