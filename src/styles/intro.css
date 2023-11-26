@@ -1,0 +1,91 @@
+  
+.intro { 
+  justify-content: space-between;
+  height: 100vh;
+  width: 100%; 
+  background: linear-gradient(to bottom, rgb(220, 220, 220) 30%, white); 
+}
+
+.side-nav {
+  padding: 0 0.5vw;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 2vh;
+  height: 100%;
+  background: rgb(200, 200, 200);
+}
+
+.icon-wrapper {
+  position: relative;
+  padding: 1.75vh;
+  background: rgb(220, 220, 220);
+  border-radius: 2rem;
+  border: 1px solid rgb(180, 180, 180);
+  box-shadow: 0 0 3px rgb(180, 180, 180);
+}
+
+.side-nav-link {
+  padding: 1vh 1vw;
+  position: absolute;
+  inset: 50% 0 auto auto;
+  font-weight: 300;
+  font-size: clamp(0.75rem, 0.875rem, 0.875rem);
+  text-align: center;
+  word-wrap: break-word;
+  transform: translate3d(103%, -50%, 0);
+  width: min(10rem, 80vw);
+  background: rgb(220, 220, 220);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3px rgb(124, 124, 124);
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+.icon-wrapper:hover > .side-nav-link { opacity: 1; }
+
+.intro-content-wrapper { 
+  padding-right: 2vw;
+  text-align: center;
+  column-gap: 2vw;
+  row-gap: 6vh;
+}
+.intro-content { padding: 0 1vw; flex-direction: column; justify-content: center; row-gap: 1vh; }
+.intro-content > h1 { margin: 0 0 1vh 0; font-size: clamp(1.75rem, 4vw, 5rem); animation: fadeSlideDown 1.3s ease-in; }
+.intro-content > span:nth-child(2) { font-size: clamp(1rem, 1.75vw, 1.75rem); letter-spacing: 0.05rem; }
+.intro-content > span:nth-child(3) { font-size: clamp(0.75rem, 1.25vw, 1.25rem); }
+
+.intro-buttons { margin-top: 5vh; column-gap: 2vw; }
+.intro-buttons > button {
+  padding: 1vh 2vw;
+  font-size: clamp(0.825rem, 1vw, 1rem);
+  color: white;
+  background: royalblue;
+  border: 0;
+  box-shadow: 0 0 3px gray;
+  border-radius: 0.25rem;
+}
+.intro-buttons > button:hover { opacity: 0.3; }
+  
+.intro-profile { 
+  justify-content: center;
+}
+.intro-profile > img {
+  padding: 0.25vh;
+  height: 50vh;
+  aspect-ratio: 1 / 1;
+  border-radius: 50rem;
+  border: 4px solid gray;
+}
+
+@media (max-width: 50rem) {
+  .intro { grid-template-columns: 100%; }
+  .side-nav { justify-content: flex-start; padding: 10vh 1vw 0 1vw; }
+  .intro-content-wrapper { flex-direction: column; }
+  .intro-profile > img { height: 33vh; }
+  .intro-buttons { margin-top: 2.5vh; }
+}
+
+@media (max-width: 25rem) {
+  .side-nav { padding: 15vh 1vw 0 1vw; }
+  .intro-profile > img { height: 15vh; }
+}
