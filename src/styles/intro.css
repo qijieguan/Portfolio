@@ -87,5 +87,9 @@
 
 @media (max-width: 25rem) {
   .side-nav { padding: 15vh 1vw 0 1vw; }
+  .intro-profile > img { height: 17.5vh; }
+}
+
+@media (max-width: 12.5rem) {
   .intro-profile > img { height: 15vh; }
 }

@@ -94,7 +94,7 @@ const Project = () => {
                             <span>
                                 Execute a frontend design for content presentation. 
                                 The task requires advanced HTML and CSS experience to
-                                develop a web theme and layouts.
+                                build website design.
                             </span>
                         </div>
                         <div className='project-solution paragraph flex'>
