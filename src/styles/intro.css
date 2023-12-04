@@ -50,7 +50,7 @@
 .icon-wrapper:hover { background: black; }
 .icon-wrapper:hover > .icon { color: white; }
 .icon-wrapper:hover > .side-nav-link, .side-nav-link:hover { 
-  border-left: 10px solid transparent; 
+  border-left: 8px solid transparent; 
   opacity: 1; 
   transform: translate3d(99%, -50%, 0); 
 }
@@ -92,6 +92,8 @@
 @media (max-width: 50rem) {
   .intro { grid-template-columns: 100%; box-shadow: 0 1px 1px rgb(180, 180, 180); }
   .side-nav { justify-content: flex-start; padding: 10vh 1vw 0 1vw; }
+  .icon-wrapper:hover > .side-nav-link, .side-nav-link:hover { border-left: 5px solid transparent; }
+  .side-nav-link > span { min-width: 25vw; max-width: 50vw; }
   .intro-content-wrapper { flex-direction: column; }
   .intro-profile > img { height: 33vh; }
   .intro-buttons { margin-top: 2.5vh; }
