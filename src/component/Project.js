@@ -9,22 +9,22 @@ import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 const Project = () => {
     return (
         <div className="projects">
-            <ul className="project-ul">
+            <ul className="project-ul flex">
                 <li className="project-li grid">
                     <label className='project-label'>Projects</label>
                     <div className='project-profile'>
-                        <img className='project-img' src={travel_img} alt=""/>
-                        <div className='project-name'>
-                            <h1>Travel App</h1>
-                            <div className='project-btns flex'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://travel-app-prod-5e426aff57d6.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/Travel_App')}
-                                >View Code</button>
-                            </div>
-                        </div>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={travel_img} alt=""/>
+                            <h1 className='project-name'>Travel App</h1>
+                        </div> 
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://travel-app-prod-5e426aff57d6.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/Travel_App')}
+                            >Source Code</button>
+                        </div>  
                     </div>
                 
                     <div className='project-content'>
@@ -58,7 +58,7 @@ const Project = () => {
                                 <li>Javascript</li>
                                 <li>Express</li>
                                 <li>Node</li>
-                                <li>TripAdvisor Api</li>
+                                <li>Trip Advisor Api</li>
                             </ul>
                         </div>
                     </div>
@@ -67,18 +67,18 @@ const Project = () => {
 
                 <li className="project-li grid">
                     <div className='project-profile'>
-                        <img className='project-img' src={chat_img} alt=""/>
-                        <div className='project-name'>
-                            <h1>Message App</h1>
-                            <div className='project-btns flex'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://message-app-prod.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/Message_App')}
-                                >View Code</button>
-                            </div>
-                        </div>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={chat_img} alt=""/>
+                            <h1 className='project-name'>Message App</h1>
+                        </div> 
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://message-app-prod.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/Message_App')}
+                            >Source Code</button>
+                        </div>  
                     </div>
                     <div className='project-content'>
                         <div className='project-difficulty paragraph flex'>
@@ -131,17 +131,17 @@ const Project = () => {
 
                 <li className="project-li grid">
                     <div className='project-profile'>
-                        <img className='project-img' src={wings_img} alt=""/>
-                        <div className='project-name'>
-                            <h1>Food App</h1>
-                            <div className='project-btns flex'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://food-app-prod.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/Food_App')}
-                                >View Code</button>
-                            </div>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={wings_img} alt=""/>
+                            <h1 className='project-name'>Food App</h1>
+                        </div> 
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://food-app-prod.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/Food_App')}
+                            >Source Code</button>
                         </div>
                     </div>
                     <div className='project-content'>
@@ -189,17 +189,17 @@ const Project = () => {
 
                 <li className="project-li grid">
                     <div className='project-profile'>
-                        <img className='project-img' src={grocery_img} alt=""/>
-                        <div className='project-name'>
-                            <h1>E-Grocer App</h1>
-                            <div className='project-btns flex'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://e-grocer-app.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/E_Grocer_App')}
-                                >View Code</button>
-                            </div>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={grocery_img} alt=""/>
+                            <h1 className='project-name'>E-Grocer App</h1>
+                        </div>  
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://e-grocer-app.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/E_Grocer_App')}
+                            >Source Code</button>
                         </div>
                     </div>
             
@@ -248,17 +248,17 @@ const Project = () => {
                 
                 <li className="project-li grid">
                     <div className='project-profile'>
-                        <img className='project-img' src={furniture_img} alt=""/>
-                        <div className='project-name'>
-                            <h1>E-Commerce App</h1>
-                            <div className='project-btns flex'>
-                                <button className='demo-btn' 
-                                    onClick={()=>window.open("https://e-commerce-app-prod.herokuapp.com/")}
-                                >View Demo</button>
-                                <button className='code-btn'
-                                    onClick={()=>window.open('https://github.com/qijieguan/ECommerce_App')}
-                                >View Code</button>
-                            </div>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={furniture_img} alt=""/>
+                            <h1 className='project-name'>E-Commerce App</h1>
+                        </div>
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://e-commerce-app-prod.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/ECommerce_App')}
+                            >Source Code</button>
                         </div>
                     </div>
                     

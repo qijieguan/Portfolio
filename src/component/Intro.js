@@ -20,19 +20,19 @@ const Intro = () => {
             <div className='side-nav flex'>
                 <div className='icon-wrapper flex'>
                     <MdEmail className='icon email'/>
-                    <span className='side-nav-link'>qijieguan7@gmail.com</span>
+                    <span className='side-nav-link flex'><span>qijieguan7@gmail.com</span></span>
                 </div>
                 <div className='icon-wrapper flex'>
                     <BsLinkedin className='icon linkedin'/>
-                    <span className='side-nav-link'>{linkedIn_url}</span>
+                    <span className='side-nav-link flex'><span>{linkedIn_url}</span></span>
                 </div>
                 <div className='icon-wrapper flex'>
                     <IoLocation className='icon location'/>
-                    <span className='side-nav-link'>Los Angeles County, CA</span>
+                    <span className='side-nav-link flex'><span>Los Angeles County, CA</span></span>
                 </div>
                 <div className='icon-wrapper flex'>
                     <FaPhoneAlt className='icon phone'/>
-                    <span className='side-nav-link'>(626) 757-2356</span>
+                    <span className='side-nav-link flex'><span>(626) 757-2356</span></span>
                 </div>
             </div>
             <div className='intro-content-wrapper flex'>

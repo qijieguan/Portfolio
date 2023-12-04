@@ -7,36 +7,48 @@
 }
 .project-ul { 
     margin: 0; 
-    padding: 0 2vw 20vh 2vw; 
+    padding: 0 0 20vh 0; 
     flex-direction: column;
     width: 100%; 
-    background: linear-gradient(to bottom, rgb(252, 252, 252) 30%, white);
+    background: white;
 }
 .project-li { 
+    padding: 0 2vw;
     grid-template-columns: 50% 45%; 
     justify-content: space-between; 
     row-gap: 1vh;
-}
-.project-img { 
-    margin: 0 auto; 
-    height: 50vh; 
-    width: 100%; 
-    object-fit: cover; 
-    object-position: center; 
-    border-radius: 1rem;
-    box-shadow: 0 0 1px rgb(180, 180, 180);
+    background: white;
 }
 
-.project-name > h1 { 
-    text-align: center; 
-    margin: 2vh auto; 
-    font-size: clamp(1.125rem, 1.75vw, 1.75rem); 
-    color: rgb(52, 52, 52);
+.project-img-wrapper { 
+    position: relative; 
+    height: 50vh;
+    box-shadow: 0 0 1px rgb(180, 180, 180); 
+    border-radius: 1rem; 
+    overflow: hidden;
 }
-.project-btns { justify-content: center; column-gap: 8%; }
+
+.project-img { margin: 0 auto; height: 100%; width: 100%; }
+
+.project-name { 
+    margin: 0;
+    position: absolute;
+    padding: 2vh 3vw 2vh 4vw;
+    inset: auto 0 0 auto;
+    text-align: right;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: clamp(0.875rem, 1.75vw, 1.75rem); 
+    color: white;
+    background: rgb(0, 0, 0, 0.5);
+    border-radius: 2rem 0 0 0;
+    z-index: 2;
+}
+
+.project-btns { margin-top: 2vh; justify-content: flex-end; column-gap: 1vw; }
 .project-btns > button {
     position: relative;
-    padding: 1vh 1vw;
+    padding: 2vh 1vw;
     font-size: clamp(0.75rem, 1.25vw, 1rem);
     font-weight: 500;
     width: 35%;
@@ -48,7 +60,7 @@
 }
 .project-btns > button:hover { opacity: 0.4; }
 .demo-btn { background: royalblue; }
-.code-btn { background: orange; }
+.code-btn { color: rgb(52, 52, 52) !important; background: gold; }
 
 .paragraph { 
     margin-bottom: 1vh;
@@ -69,13 +81,13 @@
 
 .project-tech > h1 { margin-bottom: 2vh; }
 .project-tech > ul > li {
-    margin: 1vh 1vw 0 0;
+    margin: 1vh 0.5vw 0 0;
     padding: 0.5vh 1vw;
     display: inline-flex;
     font-size: clamp(0.75rem, 1vw, 0.875rem);
     color: white;
-    background: brown;
-    box-shadow: 0 0 5px gray;
+    background: rgb(104, 104, 104);
+    box-shadow: 0 0 2px gray;
     border-radius: 5px;
 }
 
@@ -83,10 +95,17 @@
 
 
 @media (max-width: 50rem) {
-    .project-label { margin: 0 0 5vh 0; } 
-    .project-ul { padding: 0 1vw 10vh 1vw; }
-    .project-li { grid-template-columns: 100%; }
-    .project-img { height: 25vh; }
-    .project-name > h1 { margin: 0 auto 1vh auto; }
-    .line { margin: 5vh 0; }
+    .project-label { margin: 0 0 4vh 0; } 
+    .project-ul { padding: 0; row-gap: 1vh; background: rgb(230, 230, 230); }
+    .project-li { padding: 3vh 1vw 5vh 1vw; grid-template-columns: 100%; box-shadow: 0 1px 1px rgb(180, 180, 180); }
+    .project-img-wrapper{ height: 25vh; }
+    .project-name { padding: 1.5vh 3vw 1.5vh 4vw; border-radius: 1.25rem 0 0 0; }
+    .project-btns > button { padding: 1.5vh 1vw; }
+    .line { display: none; }
+}
+
+@media (max-width: 25rem) {
+    .project-btns { column-gap: 2vw; }
+    .paragraph > h1, .project-tech > h1 { margin-bottom: 0; }
+    .project-tech > ul > li { margin: 1vh 2vw 0 0; }
 }

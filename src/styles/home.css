@@ -1,0 +1,7 @@
+.home {
+    flex-direction: column;
+}
+
+@media (max-width: 50rem) {
+    .home { row-gap: 1vh; background: rgb(230, 230, 230); }
+}
