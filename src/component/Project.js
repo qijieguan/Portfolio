@@ -38,11 +38,11 @@ const Project = () => {
                             </span>
                         </div>
                         <div className='project-solution paragraph flex'>
-                            <h1>Implemention
+                            <h1>Implementation
                                 <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
                             </h1>
                             <span>
-                                The implemention underwent continuous testing and analysis of multiple API services.
+                                The implementation underwent continuous testing and analysis of multiple API services.
                             </span>
                             <span>
                                 The analysis involved making over 500 requests to ensure the chosen flight API
