@@ -26,6 +26,13 @@ const Tech = () => {
                     such as Material Design are used to integrate popular assets.
                 </div>
             </div>
+            <div className='tech-wrapper'>
+                <h1>Backend Development <span>1+year</span></h1>
+                <div className="tech-description">
+                    Has good familiarity with API integration and database. Previous API usage includes Google Map and TripAdvisor. 
+                    Primary go-to database is MongoDB.  
+                </div>
+            </div>
             <div className='tech-footer'/>
         </div>  
     )
