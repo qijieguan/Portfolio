@@ -46,7 +46,7 @@ const Project = () => {
                             </span>
                             <span>
                                 The analysis involved making over 500 requests to ensure the chosen flight API
-                                would provide neccessary data.  
+                                would provide necessary data.  
                             </span>
                         </div>
                         <div className='project-tech'>
