@@ -24,7 +24,7 @@
     position: relative; 
     height: 50vh;
     box-shadow: 0 0 1px rgb(180, 180, 180); 
-    border-radius: 1rem; 
+    border-radius: 0.5rem; 
     overflow: hidden;
 }
 
@@ -54,7 +54,7 @@
     width: 35%;
     color: white;
     box-shadow: 0 3px 3px grey;
-    border-radius: 0.5rem;
+    border-radius: 0.25rem;
     transition: all 0.2s ease-in; 
     z-index: 2;
 }
@@ -79,7 +79,7 @@
 
 .paragraph > span { font-size: clamp(0.75rem, 1.125vw, 1.125rem);  }
 
-.project-tech > h1 { margin-bottom: 2vh; }
+.project-tech > h1 { margin: 3vh 0 2vh 0; }
 .project-tech > ul > li {
     margin: 1vh 0.5vw 0 0;
     padding: 0.5vh 1vw;
@@ -88,7 +88,7 @@
     color: white;
     background: rgb(104, 104, 104);
     box-shadow: 0 0 2px gray;
-    border-radius: 5px;
+    border-radius: 0.25rem;
 }
 
 .line { margin: 12vh 0; height: 2px; width: 100%; background: rgb(240, 240, 240); }

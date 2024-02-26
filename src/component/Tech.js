@@ -29,7 +29,7 @@ const Tech = () => {
             <div className='tech-wrapper'>
                 <h1>Backend Development <span>1+year</span></h1>
                 <div className="tech-description">
-                    Has good familiarity with API integration and database. Previous API usage includes Google Map and TripAdvisor. 
+                    Has good familiarity with API integration and database. Previous API usage includes Google Map, Fantasy Stats (Tank01), and TripAdvisor. 
                     Primary go-to database is MongoDB.  
                 </div>
             </div>

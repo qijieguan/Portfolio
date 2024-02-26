@@ -4,6 +4,8 @@ import furniture_img from '../images/furniture.jpg';
 import grocery_img from '../images/grocery.jpeg';
 import chat_img from '../images/chat.webp';
 import wings_img from '../images/wings.jpeg';
+import nba_img from '../images/nba.png';
+
 import { AiOutlineCheck, AiOutlineClose } from 'react-icons/ai';
 
 const Project = () => {
@@ -12,6 +14,62 @@ const Project = () => {
             <ul className="project-ul flex">
                 <li className="project-li grid">
                     <label className='project-label'>Projects</label>
+                    <div className='project-profile'>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={nba_img} alt=""/>
+                            <h1 className='project-name'>Sports App</h1>
+                        </div> 
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://sports-app-prod-936d59e14ad7.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/Sports_App')}
+                            >Source Code</button>
+                        </div>  
+                    </div>
+                
+                    <div className='project-content'>
+                        <div className='project-difficulty paragraph flex'>
+                            <h1>Specifications
+                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                            </h1>
+                            <span>
+                                Integrate a real time API to enrich the application with essential data on the sport teams and players.
+                            </span>
+
+                            <span>Design a theme layout to demostrate data visualization and readability of web content</span>
+                        </div>
+                        <div className='project-solution paragraph flex'>
+                            <h1>Implementations
+                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                            </h1>
+                            <span>
+                                The process involved continuous testing and data analysis of similar APIs.
+                                It took consideration in data usability and api requests limit.
+                            </span>
+                            <span>
+                                The design solution was completed through identifying UI trends and content organization.
+                                The site navigation enabled quick accessiblity of different layers of data and web content.  
+                            </span>
+                        </div>
+                        <div className='project-tech'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Fantasy Stats Api (Tank01)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <div className='line'/>
+                
+                <li className="project-li grid">
                     <div className='project-profile'>
                         <div className='project-img-wrapper'>
                             <img className='project-img' src={travel_img} alt=""/>
