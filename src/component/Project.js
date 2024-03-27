@@ -68,60 +68,6 @@ const Project = () => {
                     </div>
                 </li>
                 <div className='line'/>
-                
-                <li className="project-li grid">
-                    <div className='project-profile'>
-                        <div className='project-img-wrapper'>
-                            <img className='project-img' src={travel_img} alt=""/>
-                            <h1 className='project-name'>Travel App</h1>
-                        </div> 
-                        <div className='project-btns flex'>
-                            <button className='demo-btn' 
-                                onClick={()=>window.open("https://travel-app-prod-5e426aff57d6.herokuapp.com/")}
-                            >Try Demo</button>
-                            <button className='code-btn'
-                                onClick={()=>window.open('https://github.com/qijieguan/Travel_App')}
-                            >Source Code</button>
-                        </div>  
-                    </div>
-                
-                    <div className='project-content'>
-                        <div className='project-difficulty paragraph flex'>
-                            <h1>Specifications
-                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
-                            </h1>
-                            <span>
-                                Implement flight searching for airlines, ticket prices, and route details. The system will
-                                aggregate real time data from a workable flight API.
-                            </span>
-                        </div>
-                        <div className='project-solution paragraph flex'>
-                            <h1>Implementations
-                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
-                            </h1>
-                            <span>
-                                The implementation underwent continuous testing and analysis of multiple API services.
-                            </span>
-                            <span>
-                                The analysis involved making over 500 requests to ensure the chosen flight API
-                                would provide necessary data.  
-                            </span>
-                        </div>
-                        <div className='project-tech'>
-                            <h1>Technologies</h1>
-                            <ul>
-                                <li>React</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Express</li>
-                                <li>Node</li>
-                                <li>Trip Advisor Api</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <div className='line'/>
 
                 <li className="project-li grid">
                     <div className='project-profile'>
@@ -181,6 +127,60 @@ const Project = () => {
                                 <li>Express</li>
                                 <li>Node</li>
                                 <li>MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <div className='line'/>
+                
+                <li className="project-li grid">
+                    <div className='project-profile'>
+                        <div className='project-img-wrapper'>
+                            <img className='project-img' src={travel_img} alt=""/>
+                            <h1 className='project-name'>Travel App</h1>
+                        </div> 
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://travel-app-prod-5e426aff57d6.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/Travel_App')}
+                            >Source Code</button>
+                        </div>  
+                    </div>
+                
+                    <div className='project-content'>
+                        <div className='project-difficulty paragraph flex'>
+                            <h1>Specifications
+                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                            </h1>
+                            <span>
+                                Implement flight searching for airlines, ticket prices, and route details. The system will
+                                aggregate real time data from a workable flight API.
+                            </span>
+                        </div>
+                        <div className='project-solution paragraph flex'>
+                            <h1>Implementations
+                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                            </h1>
+                            <span>
+                                The implementation underwent continuous testing and analysis of multiple API services.
+                            </span>
+                            <span>
+                                The analysis involved making over 500 requests to ensure the chosen flight API
+                                would provide necessary data.  
+                            </span>
+                        </div>
+                        <div className='project-tech'>
+                            <h1>Technologies</h1>
+                            <ul>
+                                <li>React</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Javascript</li>
+                                <li>Express</li>
+                                <li>Node</li>
+                                <li>Trip Advisor Api</li>
                             </ul>
                         </div>
                     </div>
