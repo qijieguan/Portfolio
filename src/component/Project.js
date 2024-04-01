@@ -16,6 +16,70 @@ const Project = () => {
                     <label className='project-label'>Projects</label>
                     <div className='project-profile'>
                         <div className='project-img-wrapper'>
+                            <img className='project-img' src={chat_img} alt=""/>
+                            <h1 className='project-name'>Message App</h1>
+                        </div> 
+                        <div className='project-btns flex'>
+                            <button className='demo-btn' 
+                                onClick={()=>window.open("https://message-app-prod.herokuapp.com/")}
+                            >Try Demo</button>
+                            <button className='code-btn'
+                                onClick={()=>window.open('https://github.com/qijieguan/Message_App')}
+                            >Source Code</button>
+                        </div>  
+                    </div>
+                    <div className='project-content'>
+                        <div className='project-difficulty paragraph flex'>
+                            <h1>Specifications
+                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
+                            </h1>
+                            <span>
+                                Develop a system to store media content. 
+                                Images and texts will be sorted and assigned in 
+                                separate storages.
+                            </span>
+
+                            <span>
+                                Execute a frontend design for content presentation. 
+                                The task requires advanced HTML and CSS experience to
+                                build website design.
+                            </span>
+                        </div>
+                        <div className='project-solution paragraph flex'>
+                            <h1>Implementations
+                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
+                            </h1>
+
+                            <span>
+                                Images and texts were maintained in a database and cloud API. 
+                                Javascript functions and file management helped 
+                                image conversion for cloud storage.
+                            </span>
+                            <span>
+                                A frontend design was built from exploring visual concepts and  
+                                social media layouts. The execution required advanced
+                                usage of HTML, CSS, and Javascript.
+                            </span>
+                        </div>
+                    <div className='project-tech'>
+                        <h1>Technologies</h1>
+                        <ul>
+                            <li>React</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Express</li>
+                            <li>Node</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    </div>
+                </li>
+                <div className='line'/>
+
+                <li className="project-li grid">
+                    <div className='project-profile'>
+                        <div className='project-img-wrapper'>
                             <img className='project-img' src={nba_img} alt=""/>
                             <h1 className='project-name'>Sports App</h1>
                         </div> 
@@ -69,70 +133,6 @@ const Project = () => {
                 </li>
                 <div className='line'/>
 
-                <li className="project-li grid">
-                    <div className='project-profile'>
-                        <div className='project-img-wrapper'>
-                            <img className='project-img' src={chat_img} alt=""/>
-                            <h1 className='project-name'>Message App</h1>
-                        </div> 
-                        <div className='project-btns flex'>
-                            <button className='demo-btn' 
-                                onClick={()=>window.open("https://message-app-prod.herokuapp.com/")}
-                            >Try Demo</button>
-                            <button className='code-btn'
-                                onClick={()=>window.open('https://github.com/qijieguan/Message_App')}
-                            >Source Code</button>
-                        </div>  
-                    </div>
-                    <div className='project-content'>
-                        <div className='project-difficulty paragraph flex'>
-                            <h1>Specifications
-                                <AiOutlineClose size={25} color="red" style={{margin: ' 0 0 3px 5px'}}/>
-                            </h1>
-                            <span>
-                                Develop a system to store media content. 
-                                Images and texts will be sorted and assigned in 
-                                separate storages.
-                            </span>
-
-                            <span>
-                                Execute a frontend design for content presentation. 
-                                The task requires advanced HTML and CSS experience to
-                                build website design.
-                            </span>
-                        </div>
-                        <div className='project-solution paragraph flex'>
-                            <h1>Implementations
-                                <AiOutlineCheck size={25} color="green" style={{margin: ' 0 0 3px 5px'}}/>
-                            </h1>
-
-                            <span>
-                                Images and texts were maintained in a database and cloud API. 
-                                Javascript functions and file management helped 
-                                image conversion for cloud storage.
-                            </span>
-                            <span>
-                                A frontend design was built from exploring visual concepts and  
-                                social media layouts. The execution required advanced
-                                usage of HTML, CSS, and Javascript.
-                            </span>
-                        </div>
-                        <div className='project-tech'>
-                            <h1>Technologies</h1>
-                            <ul>
-                                <li>React</li>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>Javascript</li>
-                                <li>Express</li>
-                                <li>Node</li>
-                                <li>MongoDB</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <div className='line'/>
-                
                 <li className="project-li grid">
                     <div className='project-profile'>
                         <div className='project-img-wrapper'>
